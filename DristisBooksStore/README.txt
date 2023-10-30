@@ -3,27 +3,29 @@ Author: Dristi Khondkar
 2023-10-30 ISO 11:31
 we just Recreated the project
 2023-10-30 ISO 11:48
+
+Recreating the project 
 Authentication set as Individual User Account Version 5.0 and ASP.NET Core Web App (Model-View-Controller) and enable the Razor runtime complilation
 created the README.MD in Github 
 commented out the sslport in the lunchSetting.json at line 7 and need to remember set it back again
  //, "sslPort": 44327 // don't forgt it put it up again
- At 11:50
+ At 15:50
  Removed the option in the Startup.cs file at line 35 to set it 
  //(options => options.SignIn.RequireConfirmedAccount = true) //this code commented out for modification
  new code 
   services.AddDefaultIdentity<IdentityUser>()
 
-  At 11:51
+  At 15:51
 
  Did the debugginh (HomeController line 22 to 27 IAction Index() and Privacy() methods)
 
-  At 11:59
+  At 15:59
 
 From Bootswatch select the Materia Theme and download the bootsstrap.css and place it in the www>bootsstrap>dist>css and rename the old file bootsstrap_old.css
 
 Next in the wwwroot>css>cite.css codes were replaced (commented out) with the given code from blackboard
  
- At 12:06
+ At 16:06
 
  In the Views>Shared>_Layout.cshtml file change the name bootsstrap.min.css to bootsstraps.css
 
