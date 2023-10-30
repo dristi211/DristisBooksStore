@@ -1,0 +1,42 @@
+﻿Project created for St. Clair College WEB452 Assingment2
+Author: Dristi Khondkar
+2023-10-30 ISO 11:31
+we just Recreated the project
+2023-10-30 ISO 11:48
+Authentication set as Individual User Account Version 5.0 and ASP.NET Core Web App (Model-View-Controller) and enable the Razor runtime complilation
+created the README.MD in Github 
+commented out the sslport in the lunchSetting.json at line 7 and need to remember set it back again
+ //, "sslPort": 44327 // don't forgt it put it up again
+ At 11:50
+ Removed the option in the Startup.cs file at line 35 to set it 
+ //(options => options.SignIn.RequireConfirmedAccount = true) //this code commented out for modification
+ new code 
+  services.AddDefaultIdentity<IdentityUser>()
+
+  At 11:51
+
+ Did the debugginh (HomeController line 22 to 27 IAction Index() and Privacy() methods)
+
+  At 11:59
+
+From Bootswatch select the Materia Theme and download the bootsstrap.css and place it in the www>bootsstrap>dist>css and rename the old file bootsstrap_old.css
+
+Next in the wwwroot>css>cite.css codes were replaced (commented out) with the given code from blackboard
+ 
+ At 12:06
+
+ In the Views>Shared>_Layout.cshtml file change the name bootsstrap.min.css to bootsstraps.css
+
+ change the _layout.cshtml to navbar-light to navbar-dark and bg-white to bg-primary
+
+ 2023-10-30 ISO 12:10
+
+ In the Views-> Shared->_Layout.cshtml file Changed the nav class from
+navbar-light to navbar dark and bg-white to bg-primary
+
+in the _Layout.cshtm file change the a tag class at Line 22 (document said line 23? but text-dark in line 22) - remove text-dark
+At 12:23
+in the _Layout.cshtml file at line 43 in the footer class change from text-muted to text-white-50 bg-primary
+additional style sheets added to the head section and additional scripts use in the footer section _Layout.cshtml file
+
+2023-10-30 At  12:24
