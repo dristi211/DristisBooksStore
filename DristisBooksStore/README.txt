@@ -68,4 +68,5 @@ At 22:30
 A Customer area added to Areas (scafolding)
 
 At 22:34
-Changed the routes in Startup.cs as outlined in the ScaffoldingReadMe.txt file
+Changed the routes in Startup.cs as outlined in the ScaffoldingReadMe.txt file in line 67
+ pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
