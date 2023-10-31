@@ -85,3 +85,7 @@ Layout = "~/Views/Shared/_Layout.cshtml";
 
 At 23:04
 Add a new Admin area in Areas and view files added and Data and Model folder deleted and Controlers folder also deleted
+
+2023-10-31 ISO 10:47 
+
+resume the project for the 2nd part of the assingment
