@@ -47,3 +47,8 @@ Install the Microsoft.EntityFrameWorkCore.Relational and Microsoft.EntityFrameWo
 next install Microsoft.Identity EntityFrameworkCore 5.0.17 version
 
 At 21:32
+Moved Models into DristisBooks.Models and rename the old ony(Model_v1)
+Modify the Views and added Model and project references to .DataAccess and .Model file
+Rename Models folder to ViewModels
+
+Modify the Views and added Model and project references to .DataAccess and .Model file
