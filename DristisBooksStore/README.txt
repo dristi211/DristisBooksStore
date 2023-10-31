@@ -56,3 +56,7 @@ Change the namespace of the ErrorViewModels.cs file to.Models.ViewModels
 
 At 20:56
 Rename the Models folder to viewModels
+
+At 20:05
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS0246	The type or namespace name 'DristisBookStore' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooksStore\Views\Shared\Error.cshtml	1	Active
