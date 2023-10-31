@@ -37,8 +37,8 @@ Next in the wwwroot>css>cite.css codes were replaced (commented out) with the gi
 navbar-light to navbar dark and bg-white to bg-primary
 
 in the _Layout.cshtm file change the a tag class at Line 22 (document said line 23? but text-dark in line 22) - remove text-dark
-At 12:23
+At 17:23
 in the _Layout.cshtml file at line 43 in the footer class change from text-muted to text-white-50 bg-primary
 additional style sheets added to the head section and additional scripts use in the footer section _Layout.cshtml file
 
-2023-10-30 At  12:24
+At  18:24
