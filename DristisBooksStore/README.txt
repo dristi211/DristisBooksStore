@@ -93,3 +93,8 @@ resume the project for the 2nd part of the assingment
 At 11:01
 run the add-migration AddDefaultIdentityMigration in the console and build successd but giving me an warning
 -- warning is More than one DbContext was found. Specify which one to use. Use the '-Context' parameter for PowerShell commands and the '--context' parameter for dotnet commands.
+
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\W0811195\Source\Repos\DristisBooksStore\DristisBooksStore\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs	92	Active
+Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\W0811195\Source\Repos\DristisBooksStore\DristisBooksStore\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs	31	Active
+Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\W0811195\Source\Repos\DristisBooksStore\DristisBooksStore\Views\Shared\Error.cshtml	1	Active
