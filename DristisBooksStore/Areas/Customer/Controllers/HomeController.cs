@@ -7,7 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DristisBooksStore.Controllers
+namespace DristisBooksStore.Area.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
