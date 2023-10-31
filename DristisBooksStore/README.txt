@@ -42,3 +42,8 @@ in the _Layout.cshtml file at line 43 in the footer class change from text-muted
 additional style sheets added to the head section and additional scripts use in the footer section _Layout.cshtml file
 
 At  18:24
+created three new projects DristisBooks.DataAccess, DristisBooks.Models and DristisBooks.Utility
+Install the Microsoft.EntityFrameWorkCore.Relational and Microsoft.EntityFrameWorkCore.SqlServer 5.0.17 version
+next install Microsoft.Identity EntityFrameworkCore 5.0.17 version
+
+At 21:32
