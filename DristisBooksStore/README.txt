@@ -65,3 +65,7 @@ At 22:25
 public static class SD.cs created and Modify the properties of the class
 
 At 22:30
+A Customer area added to Areas (scafolding)
+
+At 22:34
+Changed the routes in Startup.cs as outlined in the ScaffoldingReadMe.txt file
