@@ -70,3 +70,6 @@ A Customer area added to Areas (scafolding)
 At 22:34
 Changed the routes in Startup.cs as outlined in the ScaffoldingReadMe.txt file in line 67
  pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+
+ At 22:39
+ Move the HomeController.cs to Area>Customer>Controller folder and deleted the Data and Models folders
