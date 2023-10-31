@@ -52,3 +52,6 @@ Modify the Views and added Model and project references to .DataAccess and .Mode
 Rename Models folder to ViewModels
 
 Modify the Views and added Model and project references to .DataAccess and .Model file
+Change the namespace of the ErrorViewModels.cs file to.Models.ViewModels
+
+At 
