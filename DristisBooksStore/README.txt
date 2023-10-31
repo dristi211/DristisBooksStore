@@ -89,3 +89,7 @@ Add a new Admin area in Areas and view files added and Data and Model folder del
 2023-10-31 ISO 10:47 
 
 resume the project for the 2nd part of the assingment
+
+At 11:01
+run the add-migration AddDefaultIdentityMigration in the console and build successd but giving me an warning
+-- warning is More than one DbContext was found. Specify which one to use. Use the '-Context' parameter for PowerShell commands and the '--context' parameter for dotnet commands.
