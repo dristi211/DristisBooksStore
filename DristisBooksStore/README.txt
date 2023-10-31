@@ -76,3 +76,5 @@ Changed the routes in Startup.cs as outlined in the ScaffoldingReadMe.txt file i
 
  At 22:45
  Edit the HomeController.cs to explicitly define that the controller is in the Customer Area [Area("Customer")]
+ Modify the HomeController and Move Home to Views
+
