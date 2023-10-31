@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DristisBooks.DataAccess\DristisBooks.DataAccess.csproj" />
     <ProjectReference Include="..\DristisBooks.Models\DristisBooks.Models.csproj" />
+    <ProjectReference Include="..\DristisBooks.Utility\DristisBooks.Utility.csproj" />
   </ItemGroup>
 
 </Project>
