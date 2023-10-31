@@ -82,3 +82,6 @@ Changed the routes in Startup.cs as outlined in the ScaffoldingReadMe.txt file i
 
 Modify the _ViewStart.cshtml to reflect the new path
 Layout = "~/Views/Shared/_Layout.cshtml";
+
+At 23:04
+Add a new Admin area in Areas and view files added and Data and Model folder deleted and Controlers folder also deleted
