@@ -163,3 +163,10 @@ and added a new class file to the >Models project and modify the code as followi
 At 12:45 
 Added the migration commend to the PM console
 add-migration AddCategoryToDb
+
+At 12:48
+As the new created Migration file will be empty as it hasnt been added to the Application DB context
+Updated the 20231101164520_AddCategoryToDb.Designer Migration name file and added using statement
+using DristisBooks.Models; in the top along with 5 other using statements
+and also added the following line of code at line 16
+ public DbSet<Category> Categories { get; set; }
