@@ -176,3 +176,10 @@ and also added the following line of code at line 16
  Added the migration but having the error
  The name 'AddCategoryToDb' is used by an existing migration.
  so delete the original and run it again 
+
+ At 14:26
+ updated the DristisBooks.DataAccess.csproj with the following code
+ <ItemGroup>
+		<Folder Include="Data"/>
+		<Folder Include="Repository\IRepository"/>
+	</ItemGroup>
