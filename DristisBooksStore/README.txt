@@ -138,3 +138,24 @@ update the database and review the update database in the toolbar view>SQL serve
 
 At 12:32 
 created the Category.cs class from DristisBooks.Models and added the statement  using System.ComponentModel.DataAnnotations;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+//using System.Linq;  //commented out this
+using System.Text;
+//using System.Threading.Tasks; //commented out this
+
+and added a new class file to the >Models project and modify the code as following
+  public class Category
+    {
+        [Key]
+
+        public int Id { get; set; }
+
+        [Display(Name ="Category Name")]
+        [Required]
+        [MaxLength(50)]
+
+        public string Name { get; set; }
+    }
+}
