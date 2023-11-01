@@ -198,3 +198,5 @@ and also added the following line of code at line 16
             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
             string inccludeProperties = null
             );
+
+    updated code in the IRepository.cs for used on the Category class to do all the CRUD operations
