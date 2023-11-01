@@ -135,3 +135,6 @@ updated the database in the PM console
 update-database
 Build Succeeded ..:)
 update the database and review the update database in the toolbar view>SQL server object explorer localdb>Database>Tables
+
+At 12:32 
+created the Category.cs class from DristisBooks.Models and added the statement  using System.ComponentModel.DataAnnotations;
