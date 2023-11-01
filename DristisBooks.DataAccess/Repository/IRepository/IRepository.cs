@@ -7,7 +7,14 @@ using System.Text;
 
 namespace DristisBooks.DataAccess.Repository.IRepository
 {
-    interface IRepository
+    public interface IRepository<T> where T : class
     {
+        T Get(int id);
+
+        IEnumerable<T> GetAll(
+            Expression<Func<T, bool>> filter = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
+            string inccludeProperties = null
+            );
     }
 }
