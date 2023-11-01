@@ -159,3 +159,7 @@ and added a new class file to the >Models project and modify the code as followi
         public string Name { get; set; }
     }
 }
+
+At 12:45 
+Added the migration commend to the PM console
+add-migration AddCategoryToDb
