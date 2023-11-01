@@ -126,7 +126,7 @@ Change your target project to the migrations project by using the Package Manage
 
 So changed the default project from DristisBooksStore to correct default project .DataAccess and run again
 now it succeessfully run and there is no build error :)
-the new migration file name entry
+the first new migration file name entry
 20231101155418_AddDefaultIdentityMigration.cs
 20231101155418_AddDefaultIdentityMigration.Designer.cs
 
@@ -170,3 +170,9 @@ Updated the 20231101164520_AddCategoryToDb.Designer Migration name file and adde
 using DristisBooks.Models; in the top along with 5 other using statements
 and also added the following line of code at line 16
  public DbSet<Category> Categories { get; set; }
+
+ At 14:03
+
+ Added the migration but having the error
+ The name 'AddCategoryToDb' is used by an existing migration.
+ so delete the original and run it again 

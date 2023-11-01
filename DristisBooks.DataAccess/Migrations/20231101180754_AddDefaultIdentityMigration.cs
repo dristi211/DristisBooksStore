@@ -2,7 +2,7 @@
 
 namespace DristisBooks.DataAccess.Migrations
 {
-    public partial class AddCategoryToDb : Migration
+    public partial class AddDefaultIdentityMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
