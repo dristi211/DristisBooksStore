@@ -129,3 +129,9 @@ now it succeessfully run and there is no build error :)
 the new migration file name entry
 20231101155418_AddDefaultIdentityMigration.cs
 20231101155418_AddDefaultIdentityMigration.Designer.cs
+
+At 12:13
+updated the database in the PM console 
+update-database
+Build Succeeded ..:)
+update the database and review the update database in the toolbar view>SQL server object explorer localdb>Database>Tables
