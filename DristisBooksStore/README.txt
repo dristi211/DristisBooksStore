@@ -116,3 +116,12 @@ changed the appsettings.json modify the database name and saved
   so checked back and found that in the ErrorViewModel namespace was missing like the following code
 
      this code need to add with  DristisBooksStore.Models.ViewModels.ErrorViewModel instead I had ErrorViewModel only
+
+     At 11:50
+     add-migration AddDefaultIdentityMigration in the Nugate Package Manager console Build succeeded but giving the following red warning
+
+ Your target project 'DristisBooksStore' doesn't match your migrations assembly 'DristisBooks.DataAccess'. Either change your target project or change your migrations assembly.
+Change your migrations assembly by using DbContextOptionsBuilder. E.g. options.UseSqlServer(connection, b => b.MigrationsAssembly("DristisBooksStore")). By default, the migrations assembly is the assembly containing the DbContext.
+Change your target project to the migrations project by using the Package Manager Console's Default project drop-down list, or by executing "dotnet ef" from the directory containing the migrations project.
+
+So changed the default project from DristisBooksStore to correct default project .DataAccess and run again
