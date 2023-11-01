@@ -99,10 +99,20 @@ Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are
 Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\W0811195\Source\Repos\DristisBooksStore\DristisBooksStore\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs	31	Active
 Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\W0811195\Source\Repos\DristisBooksStore\DristisBooksStore\Views\Shared\Error.cshtml	1	Active
 
-2023-01-11
+2023-01-11 at 11:36
 starrtted the second part of the assingment-2
 changed the appsettings.json modify the database name and saved
 "Server=(localdb)\\\\mssqllocaldb;Database=aspnet-DristisBooksStore-49593084-652F-4BD6-B7D0-D11BF8D387CA;Trusted_Connection=True;MultipleActiveResultSets=true": null, //replace this code with the following
 
     "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=DristisBooksStore;Trusted_Connection=True;MultipleActiveResultSets=true"
 
+    At 11:40
+    use the Nugat package manager to add the migration
+
+    here come 4 errors 
+    Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\W0811195\Source\Repos\DristisBooksStore\DristisBooksStore\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs	92	Active
+   Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\W0811195\Source\Repos\DristisBooksStore\DristisBooksStore\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs	31	Active
+  Error	CS0246	The type or namespace name 'ErrorViewModel' could not be found (are you missing a using directive or an assembly reference?)	DristisBooksStore	C:\Users\W0811195\Source\Repos\DristisBooksStore\DristisBooksStore\Views\Shared\Error.cshtml	1	Active
+  so checked back and found that in the ErrorViewModel namespace was missing like the following code
+
+     this code need to add with  DristisBooksStore.Models.ViewModels.ErrorViewModel instead I had ErrorViewModel only
