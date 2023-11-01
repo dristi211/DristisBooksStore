@@ -125,3 +125,7 @@ Change your migrations assembly by using DbContextOptionsBuilder. E.g. options.U
 Change your target project to the migrations project by using the Package Manager Console's Default project drop-down list, or by executing "dotnet ef" from the directory containing the migrations project.
 
 So changed the default project from DristisBooksStore to correct default project .DataAccess and run again
+now it succeessfully run and there is no build error :)
+the new migration file name entry
+20231101155418_AddDefaultIdentityMigration.cs
+20231101155418_AddDefaultIdentityMigration.Designer.cs
