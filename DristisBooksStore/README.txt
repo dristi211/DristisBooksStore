@@ -223,3 +223,7 @@ Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>
 Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>.Add(T)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\Repository.cs	10	Active
 Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>.Remove(int)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\Repository.cs	10	Active
 Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>.Remove(T)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\Repository.cs	10	Active
+
+At 13:29 
+Implemented the Repository class in side the Repository folder and included the using statements and implemented the interface
+Modify the code to create the constructor and dependency injection(DI) (from the given file)
