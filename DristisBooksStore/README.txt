@@ -210,3 +210,16 @@ and also added the following line of code at line 16
         void Remove(int id);  //to remove an object or category
         void Remove(T entity);   //another way to remove an object
         void RemoveRange(IEnumerable<T> entity); //remove a complete range of entities
+
+        Methods to use for CRUD: 
+        -Get item from the DB
+        -List of Categories
+        -Add objects
+        -Remove objects
+        after added the Repository class the following errors came
+        Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>.Get(int)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\Repository.cs	10	Active
+Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>.GetAll(Expression<Func<T, bool>>, Func<IQueryable<T>, IOrderedQueryable<T>>, string)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\Repository.cs	10	Active
+Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>.Add(T)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\Repository.cs	10	Active
+Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>.Remove(int)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\Repository.cs	10	Active
+Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>.Remove(T)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\Repository.cs	10	Active
