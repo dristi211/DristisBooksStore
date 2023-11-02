@@ -1,4 +1,7 @@
-﻿using System;
+﻿using DristisBooks.DataAccess.Repository.IRepository;
+using DristisBooks.Models;
+using DristisBooksStore.DataAccess.Data;
+using System;
 using System.Collections.Generic;
 //using System.Linq;
 using System.Text;
@@ -6,7 +9,8 @@ using System.Text;
 
 namespace DristisBooks.DataAccess.Repository.IRepository
 {
-    interface ICategoryRepository
+   public interface ICategoryRepository : IRepository<Category>
     {
+        void Update(Category category);
     }
 }

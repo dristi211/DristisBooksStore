@@ -249,3 +249,20 @@ Error	CS0246	The type or namespace name 'ApplicationDbContext' could not be foun
 
 resolved the error using the following statement and update the code
 using DristisBooksStore.DataAccess.Data;
+
+in the IRepository also coming the error when try to modify so added the using statement
+using DristisBooks.DataAccess.Repository.IRepository;
+using DristisBooks.Models;
+using DristisBooksStore.DataAccess.Data;
+
+and there is another error
+
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS0535	'CategoryRepository' does not implement interface member 'ICategoryRepository.Update(Category)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\CategoryRepository.cs	12	Active
+and implement the interface to update the code
+ public void Update(Category category)
+        {
+            throw new NotImplementedException();
+        }
+
+At 15:05
