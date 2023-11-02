@@ -200,3 +200,13 @@ and also added the following line of code at line 16
             );
 
     updated code in the IRepository.cs for used on the Category class to do all the CRUD operations
+
+    2023-11-03 ISO 12:04
+
+    resume working on the BooksStore project
+
+    updated the IRepository.cs with the following code
+     void Add(T entity); //to add an entity
+        void Remove(int id);  //to remove an object or category
+        void Remove(T entity);   //another way to remove an object
+        void RemoveRange(IEnumerable<T> entity); //remove a complete range of entities
