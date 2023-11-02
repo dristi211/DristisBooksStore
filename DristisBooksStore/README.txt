@@ -269,4 +269,25 @@ At 15:05
 an error was coming as didnt used the LINQ statement...added and resolved it
 
 At 18:27
-added a new interface in he IRepository folder-ISP_Call that extends IDisposable
+added a new interface in he IRepository folder-ISP_Call that extends IDisposable (interface class)
+for the methods T Single<T>(string procedurename, DynamicParameters param = null); added the Nugate package for Dapper auto instellicence choose the commend
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS0535	'SP_Call' does not implement interface member 'IDisposable.Dispose()'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\SP_Call.cs	10	Active
+Error	CS0535	'SP_Call' does not implement interface member 'ISP_Call.List<T1, T2>(string, DynamicParameters)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\SP_Call.cs	10	Active
+Error	CS0535	'SP_Call' does not implement interface member 'ISP_Call.List<T>(string, DynamicParameters)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\SP_Call.cs	10	Active
+Error	CS0535	'SP_Call' does not implement interface member 'ISP_Call.OneRecord<T>(string, DynamicParameters)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\SP_Call.cs	10	Active
+Error	CS0535	'SP_Call' does not implement interface member 'ISP_Call.Execute(string, DynamicParameters)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\SP_Call.cs	10	Active
+Error	CS0535	'SP_Call' does not implement interface member 'ISP_Call.Single<T>(string, DynamicParameters)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\SP_Call.cs	10	Active
+
+At 18:00 
+
+ installed the Dapper package from the intellisence
+after  that added a 
+using DristisBooks.DataAccess.Repository.IRepository;
+using DristisBooksStore.DataAccess.Data;
+using Dapper;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+//using System.Linq;
+using System.Text;
