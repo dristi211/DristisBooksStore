@@ -227,3 +227,25 @@ Error	CS0535	'Repository<T>' does not implement interface member 'IRepository<T>
 At 13:29 
 Implemented the Repository class in side the Repository folder and included the using statements and implemented the interface
 Modify the code to create the constructor and dependency injection(DI) (from the given file)
+
+At 14:42
+created the individual repos for category and all potentiial models to be added in the future
+-CategoryRepository.cs (inside the Repository folder)
+-ICategoryRepository(inside IRepository and Interface class)
+
+modify the CategoryRepository added the using statement
+using DristisBooks.DataAccess.Repository.IRepository;
+using DristisBooks.Models;
+using System;
+using System.Collections.Generic;
+//using System.Linq;  //commented out
+using System.Text;
+//using System.Threading.Tasks; //commented out
+
+after modifing the code the following error coming...
+Severity	Code	Description	Project	File	Line	Suppression State
+Error	CS7036	There is no argument given that corresponds to the required formal parameter 'db' of 'Repository<Category>.Repository(ApplicationDbContext)'	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\CategoryRepository.cs	14	Active
+Error	CS0246	The type or namespace name 'ApplicationDbContext' could not be found (are you missing a using directive or an assembly reference?)	DristisBooks.DataAccess	C:\Users\drist\Source\Repos\DristisBooksStore\DristisBooks.DataAccess\Repository\CategoryRepository.cs	13	Active
+
+resolved the error using the following statement and update the code
+using DristisBooksStore.DataAccess.Data;
