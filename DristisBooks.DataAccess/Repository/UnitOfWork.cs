@@ -8,7 +8,7 @@ using System.Text;
 
 namespace DristisBooks.DataAccess.Repository
 {
-    public class UnitOfWork  //make the method public to access the class
+    public class UnitOfWork   //make the method public to access the class
     {
         private readonly ApplicationDbContext _db;      //the using statemnet
 
