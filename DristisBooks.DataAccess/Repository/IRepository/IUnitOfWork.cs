@@ -8,7 +8,7 @@ namespace DristisBooks.DataAccess.Repository.IRepository
 {
     interface UnitOfWork : IDisposable
     {
-        ICategoryRepository Category { get;  }
+        ICategoryRepository Category { get; }
         ISP_Call SP_Call { get; }
     }
 }

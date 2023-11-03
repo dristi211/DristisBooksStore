@@ -303,3 +303,8 @@ Added a new interface (UnitOfWork) to the IRepository folder and updated the cod
         ICategoryRepository Category { get;  }
         ISP_Call SP_Call { get; }
     }
+
+    2023-11-03 At 10:42
+
+    resume working on the project 
+    Just missed the error message in the slide and added the UnitOfWork for both IRepository and Repository
