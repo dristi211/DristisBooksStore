@@ -1,5 +1,6 @@
 //using DristisBooksStore.Data;
 using DristisBooks.DataAccess.Repository;
+using DristisBooks.DataAccess.Repository.IRepository;
 using DristisBooksStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -37,7 +38,7 @@ namespace DristisBooksStore
             //removed (options => options.SignIn.RequireConfirmedAccount = true)
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-           // services.AddScoped<IUnitOfWork, UnitOfWork>();
+           services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 

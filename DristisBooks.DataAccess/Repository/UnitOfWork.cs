@@ -2,13 +2,13 @@
 using DristisBooksStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
-//using System.Linq;
+using System.Linq;
 using System.Text;
-//using System.Threading.Tasks;
+using System.Threading.Tasks;
 
 namespace DristisBooks.DataAccess.Repository
 {
-    public class UnitOfWork   //make the method public to access the class
+    public class UnitOfWork : IUnitOfWork  //make the method public to access the class
     {
         private readonly ApplicationDbContext _db;      //the using statemnet
 
