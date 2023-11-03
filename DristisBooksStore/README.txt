@@ -313,3 +313,6 @@ Added a new interface (UnitOfWork) to the IRepository folder and updated the cod
     At 13:56
     Added a newMVC Controller-Empty inside Areas/Admin
 
+    At 14:34
+    added a new'Index' view to the folder (add view Razor View and search the path ~/Views/Shared/_Layout.cshtml)
+
