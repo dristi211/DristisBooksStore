@@ -55,8 +55,8 @@ namespace DristisBooks.DataAccess.Repository
         public Tuple<IEnumerable<T1>, IEnumerable<T2>> List<T1, T2>(string procedurename, DynamicParameters param = null)
         {
             using(SqlConnection sqlCon = new SqlConnection(ConnectionString))
-                    {
-                       sqlCon.Open();
+                {
+                sqlCon.Open();
                 var result = SqlMapper.QueryMultiple(sqlCon, procedurename, param, commandType: System.Data.CommandType.StoredProcedure);
                 var item1 = result.Read<T1>().ToList(); //need to add using statement for LINQ
                 var item2 = result.Read<T2>().ToList();
@@ -74,12 +74,23 @@ namespace DristisBooks.DataAccess.Repository
 
         public T OneRecord<T>(string procedurename, DynamicParameters param = null)
         {
-            throw new NotImplementedException();
-        }
+            using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
+            {
+                sqlCon.Open();                                                                                             //throw new NotImplementedException(); previous code
+            }
+            var value = sqlCon.Query<T>(procedurename, param, commandType: System.Data.CommandType.StoredProcedure);
+                return (T)Convert.ChangeType(value.FirstOrDefault(), typeof(T));
+            }
+                                                                                                                              
 
         public T Single<T>(string procedurename, DynamicParameters param = null)
         {
-            throw new NotImplementedException();
+            using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
+            {
+                sqlCon.Open();
+                return (T)Convert.ChangeType(sqlCon.ExecuteScalar<T>(procedurename, param, commandType: System.Data.CommandType.StoredProcedure), typeof(T));                                                                                                             //throw new NotImplementedException(); previous code
+            }
+                     
         }
     }
 }
