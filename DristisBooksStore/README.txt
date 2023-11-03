@@ -281,8 +281,9 @@ Error	CS0535	'SP_Call' does not implement interface member 'ISP_Call.Single<T>(s
 
 At 18:00 
 
- installed the Dapper package from the intellisence
-after  that added a 
+ installed the Dapper package from the IntelliSense 
+
+after  that added the SP_Call.cs file in the Repository folder and select the following using statements and implement the ISP_Call interface (from intellisence)
 using DristisBooks.DataAccess.Repository.IRepository;
 using DristisBooksStore.DataAccess.Data;
 using Dapper;
