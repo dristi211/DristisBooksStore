@@ -320,3 +320,7 @@ Added a new interface (UnitOfWork) to the IRepository folder and updated the cod
 
     In _Layout.cshtml moved the Category link to the content management drop-down
     <a class="dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+
+    At 12:50 
+   created the Category js file in the DristisBooksStore>wwwroot>js>Category.js file and  added the given script to that file 
+   In the Index.cshtm file added the @section call to the category.js script 
