@@ -325,3 +325,6 @@ Added a new interface (UnitOfWork) to the IRepository folder and updated the cod
    created the Category js file in the DristisBooksStore>wwwroot>js>Category.js file and  added the given script to that file 
    In the Index.cshtm file added the @section call to the category.js script 
    At 12:53
+   applied the code to activate the "edit" and "Delete" buttons and "Create New Category" using the Upsert action
+   added the IAction result to the controller and added a View in the Areas>admin>Views>Category>Upsert by adding a Rezor View scaffolding and the path 
+   selected as ~/Views/Shared/_Layout.cshtml
