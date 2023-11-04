@@ -331,3 +331,14 @@ Added a new interface (UnitOfWork) to the IRepository folder and updated the cod
 
    At 17:42
    created a partial view for the EDIT|BACK in the general Views>Shared folder and added the asp-action in the _CreateAndBackToListButton
+
+   At 17:52 
+   the following asp-action code was added the _CreateAndBackToListButton
+   <div class="row">
+    <div class="col">
+        <button type="submit" class="btn btn-primary form-control">Create</button>
+    </div>
+    <div class="col">
+        <a asp-action="Index" class="btn btn-success form-control">Back to List</a>
+    </div>
+</div>
