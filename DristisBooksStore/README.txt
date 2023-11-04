@@ -316,3 +316,7 @@ Added a new interface (UnitOfWork) to the IRepository folder and updated the cod
     At 14:34
     added a new'Index' view to the folder (add view Razor View and search the path ~/Views/Shared/_Layout.cshtml)
 
+    2023-11-04 ISO 12:07 resume working 
+
+    In _Layout.cshtml moved the Category link to the content management drop-down
+    <a class="dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
