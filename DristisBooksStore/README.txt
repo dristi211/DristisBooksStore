@@ -346,3 +346,6 @@ Added a new interface (UnitOfWork) to the IRepository folder and updated the cod
 At 18:03
 another partial view was added in the Views>Shared folder _EditAndBackToListButton (Razor partial view)
 added the @model razor statement in the 
+
+At 18:33
+ Modified the Upsert.cshtml file and add asp-action="Upsert" in the Index.cshtml (Views>Category>Index.cshtml) file
