@@ -342,3 +342,7 @@ Added a new interface (UnitOfWork) to the IRepository folder and updated the cod
         <a asp-action="Index" class="btn btn-success form-control">Back to List</a>
     </div>
 </div>
+
+At 18:03
+another partial view was added in the Views>Shared folder _EditAndBackToListButton (Razor partial view)
+added the @model razor statement in the 
