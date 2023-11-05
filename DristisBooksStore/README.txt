@@ -371,3 +371,19 @@ InvalidOperationException: The following sections have been defined but have not
 At 15:26
 
 created an Upsert POST action method in the CategoryController.cs
+
+At 15:43
+added the API (Application Programming Interface) call for HTTPDelete in the CategoryController.cs(Area>Admin>CategoryController)
+[HttpDelete]
+
+        public IActionResult Delete(int id)
+        {
+            var objFromDb = _unitOfWork.Category.Get(id);
+            if(objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+            _unitOfWork.Category.Remove(objFromDb);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete successful" });
+        }

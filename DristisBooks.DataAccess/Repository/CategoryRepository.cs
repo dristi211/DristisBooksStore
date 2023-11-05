@@ -25,7 +25,7 @@ namespace DristisBooks.DataAccess.Repository
             if(objFromDb !=null)  //save changes if not null
             {
                 objFromDb.Name = category.Name;
-                _db.SaveChanges();
+                //_db.SaveChanges();                  //as instructed to remove
             }
             //throw new NotImplementedException();
         }
