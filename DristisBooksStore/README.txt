@@ -349,3 +349,10 @@ added the @model razor statement in the
 
 At 18:33
  Modified the Upsert.cshtml file and add asp-action="Upsert" in the Index.cshtml (Views>Category>Index.cshtml) file
+
+ 2023-11-05 ISO 13:40
+
+ Added the @section call to Scripts to validate input on the client side
+ @section Script {
+<partial name="_ValidationScriptsPartial" />
+}
