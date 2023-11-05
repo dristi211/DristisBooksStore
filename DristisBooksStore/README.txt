@@ -356,3 +356,18 @@ At 18:33
  @section Script {
 <partial name="_ValidationScriptsPartial" />
 }
+
+while test the application the following exception handling error occured
+An unhandled exception occurred while processing the request.
+NotImplementedException: The method or operation is not implemented.
+DristisBooksStore.Areas.Admin.Controllers.CategoryController.op_Implicit(Category v) in CategoryController.cs, line 56
+
+            
+it was typo and instead of Category category = new Category();  I type CategoryController...:(
+
+now came another handling error
+InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Script'. To ignore an unrendered section call IgnoreSection("sectionName").
+
+At 15:26
+
+created an Upsert POST action method in the CategoryController.cs
