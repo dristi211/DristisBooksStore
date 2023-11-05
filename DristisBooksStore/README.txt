@@ -387,3 +387,33 @@ added the API (Application Programming Interface) call for HTTPDelete in the Cat
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
         }
+
+        At 16:08 
+        added the delete functionality in category.js with including the onclick event to the Delete function
+        added the Delete(url) function code
+
+        function Delete(url) {
+    swal({
+        title: "Are you sure you want to delete?",
+        text: "You will not be able to restore the data!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((willDelete) => {
+        if (willDelete) {
+            $.ajax({
+                type: "DELETE",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                            toastr.success(data.message);
+                            dataTable.ajax.reload();
+                        }
+                        else {
+                            toastr.error(data.message);
+                        }
+                    }
+            });
+        }
+    });  
+}
