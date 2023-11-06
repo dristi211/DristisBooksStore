@@ -417,3 +417,12 @@ added the API (Application Programming Interface) call for HTTPDelete in the Cat
         }
     });  
 }
+
+2023-11-06 ISO 14:54
+there was an error coming 
+InvalidOperationException: The following sections have been defined but have not been rendered by the page at '/Views/Shared/_Layout.cshtml': 'Script'. To ignore an unrendered section call IgnoreSection("sectionName").
+
+OMG...in the Index.cshtml file there was a typo I wrote Scrpit instead of Scripts...and there you go....
+Finnay correct layout is coming but saying cannot connect to the database so run the commend 
+update-database
+and now all is well....now it is running well
