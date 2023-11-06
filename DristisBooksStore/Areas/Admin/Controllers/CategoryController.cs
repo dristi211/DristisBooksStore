@@ -1,4 +1,4 @@
-﻿using DristisBooks.DataAccess.Repository;
+﻿//using DristisBooks.DataAccess.Repository;
 using DristisBooks.DataAccess.Repository.IRepository;
 using DristisBooks.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -34,6 +34,7 @@ namespace DristisBooksStore.Areas.Admin.Controllers
             }
             //this is for edit
             category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+
             if(category == null)
             {
                 return NotFound();
@@ -52,6 +53,7 @@ namespace DristisBooksStore.Areas.Admin.Controllers
                 if(category.Id == 0)
                 {
                     _unitOfWork.Category.Add(category);
+                    _unitOfWork.Save();
                    
                 }
                 else
