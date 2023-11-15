@@ -436,3 +436,5 @@ At 10:25 Created the Created the CoverType cs file in the DristisBooksStore.Mode
 At 10:29
 Created CoverType Repository in the Repository folder
 
+AT 10:53
+Created CoverTypeRepository.cs class in Repository folder and IRepository folder ICoverType interfae class
