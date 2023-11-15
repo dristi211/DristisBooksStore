@@ -1,5 +1,4 @@
-﻿
-using DristisBooks.DataAccess.Repository.IRepository;
+﻿using DristisBooks.DataAccess.Repository.IRepository;
 using DristisBooks.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace DristisBooksStore.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
