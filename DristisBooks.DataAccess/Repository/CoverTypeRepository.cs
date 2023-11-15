@@ -18,7 +18,7 @@ namespace DristisBooks.DataAccess.Repository
     {
         private readonly ApplicationDbContext _db;
 
-        //public CoverTypeRepository(ApplicationDbContext db) : base(db)
+      //  public CoverTypeRepository(ApplicationDbContext db) : base(db)
         //{
         //    _db = db;
         //}
