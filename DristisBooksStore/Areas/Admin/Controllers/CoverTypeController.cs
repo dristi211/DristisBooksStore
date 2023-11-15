@@ -1,16 +1,74 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;*/
+using DristisBooks.DataAccess.Repository.IRepository;
+using DristisBooks.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace DristisBooksStore.Areas.Admin.Controllers
 {
     public class CoverTypeController : Controller
     {
+        private readonly IUnitOfWork _unitOfWork;
+
+        public CoverTypeController(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
         public IActionResult Index()
         {
             return View();
         }
+
+     /*   public IActionResult Upsert(int? id)  //action method for Upsert
+        {
+            CoverType covertype = new CoverType();  //using DristisBooks.Models;
+            if (id == null)
+            {
+                //this is for create
+                return View(covertype);
+            }
+            //this is for edit
+            covertype = _unitOfWork.CoverType.Get(id.GetValueOrDefault());
+
+            if (covertype == null)
+            {
+                return NotFound();
+            }
+            return View(covertype);
+        }
+
+        //use HTTP POST to define the post-action method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult Upsert(CoverType covertype)
+        {
+            if (ModelState.IsValid)                   //checks all validation in the model (e.g. Name required) to increase security
+            {
+                if (covertype.Id == 0)
+                {
+                    _unitOfWork.CoverType.Add(covertype);
+                    _unitOfWork.Save();
+
+                }
+                else
+                {
+                    _unitOfWork.CoverType.Update(covertype);
+                }
+
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));        //to see all the categories
+            }
+            return View(covertype);
+        }*/
+
     }
 }
