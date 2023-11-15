@@ -438,3 +438,6 @@ Created CoverType Repository in the Repository folder
 
 AT 10:53
 Created CoverTypeRepository.cs class in Repository folder and IRepository folder ICoverType interfae class
+
+At 14:55
+Created the CoverType Controller.cs in the Area>Admin and In the Views folder add CoverType folder and Index.cshtml and Upsert.cshtml created
