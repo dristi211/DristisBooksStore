@@ -18,10 +18,10 @@ namespace DristisBooks.DataAccess.Repository
     {
         private readonly ApplicationDbContext _db;
 
-        public CoverTypeRepository(ApplicationDbContext db) : base(db)
-        {
-            _db = db;
-        }
+        //public CoverTypeRepository(ApplicationDbContext db) : base(db)
+        //{
+        //    _db = db;
+        //}
 
        /* public void Update(CoverType coverType)
         {
