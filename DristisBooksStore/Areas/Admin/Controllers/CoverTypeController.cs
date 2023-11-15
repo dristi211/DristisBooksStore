@@ -27,7 +27,7 @@ namespace DristisBooksStore.Areas.Admin.Controllers
             return View();
         }
 
-     /*   public IActionResult Upsert(int? id)  //action method for Upsert
+       public IActionResult Upsert(int? id)  //action method for Upsert
         {
             CoverType covertype = new CoverType();  //using DristisBooks.Models;
             if (id == null)
@@ -68,7 +68,7 @@ namespace DristisBooksStore.Areas.Admin.Controllers
                 return RedirectToAction(nameof(Index));        //to see all the categories
             }
             return View(covertype);
-        }*/
+        }
 
     }
 }
