@@ -426,3 +426,13 @@ OMG...in the Index.cshtml file there was a typo I wrote Scrpit instead of Script
 Finnay correct layout is coming but saying cannot connect to the database so run the commend 
 update-database
 and now all is well....now it is running well
+
+2023-11-21 ISO 10:22
+
+Started working with the Part3 (Section1)
+
+At 10:25 Created the Created the CoverType cs file in the DristisBooksStore.Model folder and ID and Name
+
+At 10:29
+Created CoverType Repository in the Repository folder
+

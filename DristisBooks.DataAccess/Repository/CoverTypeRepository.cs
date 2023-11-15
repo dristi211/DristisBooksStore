@@ -14,7 +14,7 @@ using System.Text;
 
 namespace DristisBooks.DataAccess.Repository
 {
-  /*public class CoverTypeRepository : Repository<CoverType>, ICoverTypeRepository
+  public class CoverTypeRepository  //: Repository<CoverType>, ICoverTypeRepository
     {
         private readonly ApplicationDbContext _db;
 
@@ -23,7 +23,7 @@ namespace DristisBooks.DataAccess.Repository
             _db = db;
         }
 
-        public void Update(CoverType coverType)
+       /* public void Update(CoverType coverType)
         {
             var objFromDb = _db.CoverTypes.FirstOrDefault(s => s.Id == coverType.Id);
             if (objFromDb != null)  //save changes if not null
@@ -31,8 +31,8 @@ namespace DristisBooks.DataAccess.Repository
                 objFromDb.Name = coverType.Name;
                 //_db.SaveChanges();                  //as instructed to remove
             }
-        }
+        }*/
 
-    }*/
+    }
 }
 
