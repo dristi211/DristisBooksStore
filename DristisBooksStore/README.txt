@@ -441,3 +441,10 @@ Created CoverTypeRepository.cs class in Repository folder and IRepository folder
 
 At 14:55
 Created the CoverType Controller.cs in the Area>Admin and In the Views folder add CoverType folder and Index.cshtml and Upsert.cshtml created
+
+At 5:37
+Your target project 'DristisBooksStore' doesn't match your migrations assembly 'DristisBooks.DataAccess'. Either change your target project or change your migrations assembly.
+Change your migrations assembly by using DbContextOptionsBuilder. E.g. options.UseSqlServer(connection, b => b.MigrationsAssembly("DristisBooksStore")). By default, the migrations assembly is the assembly containing the DbContext.
+Change your target project to the migrations project by using the Package Manager Console's Default project drop-down list, or by executing "dotnet ef" from the directory containing the migrations project.
+
+Changed the Default project and run the ,Migration again
