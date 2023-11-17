@@ -498,3 +498,19 @@ At 10:38
  modified the code and add Product to UnitOfWork and IUnitOfWork
 
  there was an error coming due to not added the Update method in the IProductRepository file
+
+ At 14:11
+
+ Created the ProductController and Modified the ProductController with the following code
+
+ [Area("Admin")]
+    public class ProductController : Controller
+    {
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _hostEnvironment;               //to upload images on the server inside wwwroot
+
+        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment)
+        {
+            _unitOfWork = unitOfWork;
+            _hostEnvironment = hostEnvironment;
+        }
