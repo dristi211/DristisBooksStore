@@ -515,4 +515,4 @@ At 10:38
             _hostEnvironment = hostEnvironment;
         }
 
-        Instaaed
+installed the package "Microsoft.AspNetCore.Mvc.ViewFeatures package from the ProductVM.cs (Intellisence suggestion latest virson)
