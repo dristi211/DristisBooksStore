@@ -473,3 +473,5 @@ For the Productcs file while adding the code I am confused should I add ForeignK
 
 
                                       At 10:12 updated the Product class so Title, ISBN and Author are [Required]field and creat a new migration(AddValidation To Product) and update the the database
+                                      Migration done successfully but given the following warning
+                                      An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy.
