@@ -472,6 +472,27 @@ For the Productcs file while adding the code I am confused should I add ForeignK
                                       20231117150253_AddProductToDb.Designer
 
 
-                                      At 10:12 updated the Product class so Title, ISBN and Author are [Required]field and creat a new migration(AddValidation To Product) and update the the database
+   At 10:12 updated the Product class so Title, ISBN and Author are [Required]field and creat a new migration(AddValidation To Product) and update the the database
                                       Migration done successfully but given the following warning
                                       An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy.
+
+  At 10:36 added the  following code to the ProductRepository 
+                                          if (product.ImageUrl != null)
+                {
+                    objFromDb.ImageUrl = product.ImageUrl;                 //addd the check for ImageUrl
+                }
+            
+                objFromDb.Title = product.Title;
+                objFromDb.Description = product.Description;
+                objFromDb.ISBN = product.ISBN;
+                objFromDb.Author = product.Author;
+                objFromDb.ListPrice = product.ListPrice;
+                objFromDb.CategoryId = product.CategoryId;
+                objFromDb.CoverTypeId = product.CoverTypeId;
+
+                //_db.SaveChanges();                  //as instructed to remove
+            }
+        }
+
+At 10:38
+ modified the code and add Product to UnitOfWork and IUnitOfWork
