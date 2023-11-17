@@ -463,3 +463,11 @@ For the Productcs file while adding the code I am confused should I add ForeignK
 
         References to the new Products piece to the database in the ApplicationDbContext.cs file added the  
         public DbSet<Product> Products { get; set; }     //adding products to the DB
+
+        At 10:03
+
+        Added the migration AddProductToDb
+
+       New Migration folder timestamp: 20231117150253_AddProductToDb.cs
+                                      20231117150253_AddProductToDb.Designer
+
