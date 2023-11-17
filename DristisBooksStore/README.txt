@@ -471,3 +471,5 @@ For the Productcs file while adding the code I am confused should I add ForeignK
        New Migration folder timestamp: 20231117150253_AddProductToDb.cs
                                       20231117150253_AddProductToDb.Designer
 
+
+                                      At 10:12 updated the Product class so Title, ISBN and Author are [Required]field and creat a new migration(AddValidation To Product) and update the the database
