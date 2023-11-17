@@ -458,3 +458,8 @@ For the Productcs file while adding the code I am confused should I add ForeignK
         public int CoverTypeId { get; set; }                  //Foreign key reference
         [ForeignKey("CoverTypeId")]
         public CoverType CoverType { get; set; }
+
+        At 9:58 
+
+        References to the new Products piece to the database in the ApplicationDbContext.cs file added the  
+        public DbSet<Product> Products { get; set; }     //adding products to the DB
