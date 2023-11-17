@@ -448,3 +448,7 @@ Change your migrations assembly by using DbContextOptionsBuilder. E.g. options.U
 Change your target project to the migrations project by using the Package Manager Console's Default project drop-down list, or by executing "dotnet ef" from the directory containing the migrations project.
 
 Changed the Default project and run the ,Migration again
+
+2023-11-17 ISO 9:26
+Resume working on the Bookstoreproject Assingment2-part2(section2)
+
