@@ -516,3 +516,6 @@ At 10:38
         }
 
 installed the package "Microsoft.AspNetCore.Mvc.ViewFeatures package from the ProductVM.cs (Intellisence suggestion latest virson)
+
+At 16:14 
+Created and modified the ProductController
