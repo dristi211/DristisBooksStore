@@ -496,3 +496,5 @@ For the Productcs file while adding the code I am confused should I add ForeignK
 
 At 10:38
  modified the code and add Product to UnitOfWork and IUnitOfWork
+
+ there was an error coming due to not added the Update method in the IProductRepository file
