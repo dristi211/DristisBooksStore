@@ -452,3 +452,9 @@ Changed the Default project and run the ,Migration again
 2023-11-17 ISO 9:26
 Resume working on the Bookstoreproject Assingment2-part2(section2)
 
+For the Productcs file while adding the code I am confused should I add ForeignKey as CategoryId for CoverType or CoverTypeId??   for now kept as it is in the given code
+
+ [Required]
+        public int CoverTypeId { get; set; }                  //Foreign key reference
+        [ForeignKey("CoverTypeId")]
+        public CoverType CoverType { get; set; }
