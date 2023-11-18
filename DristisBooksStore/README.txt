@@ -544,3 +544,6 @@ Added an Index view (Admin>Views>Product) Razorview (not empty one) and scaffold
 At 12:37 
 created the modified the Upsert +.cshtml in Product
 Created and Modified the Upsert file (code given blackboard)
+
+At 13:07
+created the tiny.cloud accoount and using the API key provided(?) initialize and added a function to validate the input and if emty display a sweet alert
