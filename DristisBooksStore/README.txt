@@ -543,3 +543,4 @@ Added an Index view (Admin>Views>Product) Razorview (not empty one) and scaffold
 
 At 12:37 
 created the modified the Upsert +.cshtml in Product
+Created and Modified the Upsert file (code given blackboard)
