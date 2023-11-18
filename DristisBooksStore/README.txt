@@ -536,3 +536,5 @@ Modified the ProductController so the IActionResultUpsert calls to the ProductVM
             _unitOfWork.Save();
             return Json(new { success = true, message = "Delete successful" });
         }
+
+        
