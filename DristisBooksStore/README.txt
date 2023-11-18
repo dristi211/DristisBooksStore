@@ -519,3 +519,20 @@ installed the package "Microsoft.AspNetCore.Mvc.ViewFeatures package from the Pr
 
 At 16:14 
 Created and modified the ProductController
+
+2023-11-18 ISO 11:53
+
+Modified the ProductController so the IActionResultUpsert calls to the ProductVM view Model, included the using statement to the ViewModeld folder amd Microsoft.Asp.NetCore.Mvc.Rendering
+ Modified the API call to include the Category and CoverType properties
+
+ public IActionResult Delete(int id)
+        {
+            var objFromDb = _unitOfWork.Product.Get(id);
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+            _unitOfWork.Product.Remove(objFromDb);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete successful" });
+        }
