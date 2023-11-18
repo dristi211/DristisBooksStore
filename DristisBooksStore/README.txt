@@ -538,3 +538,5 @@ Modified the ProductController so the IActionResultUpsert calls to the ProductVM
         }
 
         
+At 12:25
+Added an Index view (Admin>Views>Product) Razorview (not empty one) and scaffolding with the _layout path selected and  modified the code according to Category Index.cshtml file
