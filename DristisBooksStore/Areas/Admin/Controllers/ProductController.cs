@@ -68,26 +68,26 @@ namespace DristisBooksStore.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-      /*  public IActionResult Upsert(CoverType covertype)
+        public IActionResult Upsert(Product product)
         {
             if (ModelState.IsValid)                   //checks all validation in the model (e.g. Name required) to increase security
             {
-                if (covertype.Id == 0)
+                if (product.Id == 0)
                 {
-                    _unitOfWork.Product.Add(covertype);
+                    _unitOfWork.Product.Add(product);
                     _unitOfWork.Save();
 
                 }
                 else
                 {
-                    _unitOfWork.CoverType.Update(covertype);
+                    _unitOfWork.Product.Update(product);
                 }
 
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));        //to see all the categories
             }
-            return View(covertype);
-        }*/
+            return View(product);
+        }
 
         //API calls here 
         #region API CALLS

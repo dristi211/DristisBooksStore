@@ -547,3 +547,12 @@ Created and Modified the Upsert file (code given blackboard)
 
 At 13:07
 created the tiny.cloud accoount and using the API key provided(?) initialize and added a function to validate the input and if emty display a sweet alert
+
+2023-11-20 ISO 15:30
+
+While running the code there is the following handling error coming
+System.InvalidOperationException
+  HResult=0x80131509
+  Message=An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation ' CoverType' specified in string based include path ' CoverType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+  Source=Microsoft.EntityFrameworkCore
+
