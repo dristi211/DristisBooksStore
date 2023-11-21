@@ -556,3 +556,5 @@ System.InvalidOperationException
   Message=An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation ' CoverType' specified in string based include path ' CoverType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
   Source=Microsoft.EntityFrameworkCore
 
+  2023-11-21 ISO 10:22
+  Just after the marking done modified the ProductController

@@ -96,7 +96,9 @@ namespace DristisBooksStore.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             //return NotFound();
-            var allObj = _unitOfWork.Product.GetAll(inccludeProperties: "Category, CoverType");
+           var allObj = _unitOfWork.Product.GetAll(inccludeProperties: "Category,CoverType");
+
+           // var allObj = _unitOfWork.Product.GetAll();
             return Json(new { data = allObj });
         }
 
