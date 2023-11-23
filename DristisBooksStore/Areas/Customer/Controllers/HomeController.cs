@@ -1,4 +1,6 @@
-﻿using DristisBooksStore.Models;
+﻿using DristisBooks.DataAccess.Repository.IRepository;
+using DristisBooks.Models;
+using DristisBooksStore.Models;
 using DristisBooksStore.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -14,15 +16,20 @@ namespace DristisBooksStore.Area.Customer.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IUnitOfWork _unifOfWork;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IUnitOfWork unifOfWork)
         {
             _logger = logger;
+            _unifOfWork = unifOfWork;
         }
 
         public IActionResult Index()
         {
-            return View();
+            IEnumerable<Product> productList = _unifOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+            //IEnumerable<Product> productList = _unifOfWork.Product.GetAll();
+
+            return View(productList);
         }
 
         public IActionResult Privacy()

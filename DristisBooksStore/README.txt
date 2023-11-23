@@ -560,3 +560,7 @@ System.InvalidOperationException
   Just after the marking done modified the ProductController
 
   2023-11-22 ISO 11:00 started the Part=4 of the assingment
+
+  2023-11-23 ISO 17:12
+
+  Updated all pages but database showing error
