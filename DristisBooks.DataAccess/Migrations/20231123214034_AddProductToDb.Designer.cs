@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DristisBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231124182408_AddDefaultIdentityMigration")]
-    partial class AddDefaultIdentityMigration
+    [Migration("20231123214034_AddProductToDb")]
+    partial class AddProductToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
