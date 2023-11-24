@@ -27,9 +27,11 @@ namespace DristisBooksStore.Area.Customer.Controllers
         public IActionResult Index()
         {
             IEnumerable<Product> productList = _unifOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+
             //IEnumerable<Product> productList = _unifOfWork.Product.GetAll();
 
             return View(productList);
+
         }
 
         public IActionResult Privacy()
