@@ -568,3 +568,18 @@ System.InvalidOperationException
   2023-111-25 ISO 16:34
 
   startted working and trying to find out the error coming.. the page is not showing..
+
+  migration was added for uodated price tag
+
+  add-migration AddPriceToDb
+
+  migration done but the page is not coming throwing the following error
+
+  Exception thrown: 'Microsoft.Data.SqlClient.SqlException' in Microsoft.EntityFrameworkCore.Relational.dll
+An exception of type 'Microsoft.Data.SqlClient.SqlException' occurred in Microsoft.EntityFrameworkCore.Relational.dll but was not handled in user code
+Invalid column name 'Price'.
+Invalid column name 'Price100'.
+Invalid column name 'Price50'.
+
+The program '[31312] iisexpress.exe' has exited with code -1 (0xffffffff).
+
