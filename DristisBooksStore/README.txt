@@ -564,3 +564,51 @@ System.InvalidOperationException
   2023-11-23 ISO 17:12
 
   Updated all pages but database showing error
+
+ 2023-11-20 ISO 15:30
+
+While running the code there is the following handling error coming
+System.InvalidOperationException
+  HResult=0x80131509
+  Message=An error was generated for warning 'Microsoft.EntityFrameworkCore.Query.InvalidIncludePathError': Unable to find navigation ' CoverType' specified in string based include path ' CoverType'. This exception can be suppressed or logged by passing event ID 'CoreEventId.InvalidIncludePathError' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+  Source=Microsoft.EntityFrameworkCore
+
+  2023-11-21 ISO 10:22
+  Just after the marking done modified the ProductController
+
+  2023-11-22 ISO 11:00 started the Part=4 of the assingment
+
+  2023-11-23 ISO 17:12
+
+  Updated all pages but database showing error
+
+  2023-111-25 ISO 16:34
+
+  startted working and trying to find out the error coming.. the page is not showing..
+
+  migration was added for uodated price tag
+
+  add-migration AddPriceToDb
+
+  migration done but the page is not coming throwing the following error
+
+  Exception thrown: 'Microsoft.Data.SqlClient.SqlException' in Microsoft.EntityFrameworkCore.Relational.dll
+An exception of type 'Microsoft.Data.SqlClient.SqlException' occurred in Microsoft.EntityFrameworkCore.Relational.dll but was not handled in user code
+Invalid column name 'Price'.
+Invalid column name 'Price100'.
+Invalid column name 'Price50'.
+
+The program '[31312] iisexpress.exe' has exited with code -1 (0xffffffff).
+
+2023-11-27 ISO 10:26
+
+resume working on assingment part4...added the CategoryVM.cs and modifieying the SD.cs but having error and page is unavailable.....
+
+at15:38 droped the Category table as no data was showing and void
+20231101180003_AddCategoryToDb
+20231101180754_AddDefaultIdentityMigration
+20231123213954__AddCoverTypeToDb
+20231127161536_AddPriceToDb
+
+At 16:32
+Added the migration again
