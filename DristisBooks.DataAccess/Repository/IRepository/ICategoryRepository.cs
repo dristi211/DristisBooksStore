@@ -1,6 +1,6 @@
-﻿using DristisBooks.DataAccess.Repository.IRepository;
+﻿//using DristisBooks.DataAccess.Repository.IRepository;
 using DristisBooks.Models;
-using DristisBooksStore.DataAccess.Data;
+//using DristisBooksStore.DataAccess.Data;
 using System;
 using System.Collections.Generic;
 //using System.Linq;

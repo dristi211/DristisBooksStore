@@ -583,3 +583,6 @@ Invalid column name 'Price50'.
 
 The program '[31312] iisexpress.exe' has exited with code -1 (0xffffffff).
 
+2023-11-27 ISO 10:26
+
+resume working on assingment part4...added the CategoryVM.cs and modifieying the SD.cs
