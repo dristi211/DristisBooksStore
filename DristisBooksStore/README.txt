@@ -612,3 +612,7 @@ at15:38 droped the Category table as no data was showing and void
 
 At 16:32
 Added the migration again
+
+At 18:13
+
+The page is showing and table are showing but can't add the price and coverType

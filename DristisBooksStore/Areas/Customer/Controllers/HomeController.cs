@@ -11,24 +11,25 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace DristisBooksStore.Area.Customer.Controllers
+
 {
     [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IUnitOfWork _unifOfWork;
+        private readonly IUnitOfWork _unifOfWork;   //new
 
+        //public HomeController(ILogger<HomeController> logger)
         public HomeController(ILogger<HomeController> logger, IUnitOfWork unifOfWork)
         {
             _logger = logger;
-            _unifOfWork = unifOfWork;
+            _unifOfWork = unifOfWork;   //new
         }
 
         public IActionResult Index()
         {
+            //return View();
             IEnumerable<Product> productList = _unifOfWork.Product.GetAll(includeProperties: "Category,CoverType");
-            //IEnumerable<Product> productList = _unifOfWork.Product.GetAll();
-
             return View(productList);
         }
 
