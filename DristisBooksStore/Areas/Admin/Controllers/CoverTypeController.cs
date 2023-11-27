@@ -71,26 +71,26 @@ namespace DristisBooksStore.Areas.Admin.Controllers
 
         #region API CALLS
 
-        public IActionResult GetAll()
-        {
-            var allObj = _unitOfWork.SP_Call.List<CoverType>(SD.Proc_CoverType_GetAll, null);
-            return Json(new { data = allObj });
-        }
+        //public IActionResult GetAll()
+        //{
+        //    var allObj = _unitOfWork.SP_Call.List<CoverType>(SD.Proc_CoverType_GetAll, null);
+        //    return Json(new { data = allObj });
+        //}
 
-        [HttpDelete]
-        public IActionResult Delete(int id)
-        {
-            var parameter = new DynamicParameters();
-            parameter.Add("@Id", id);
-            var objFromDb = _unitOfWork.SP_Call.OneRecord<CoverType>(SD.Proc_CoverType_Get, parameter);
-            if (objFromDb == null)
-            {
-                return Json(new { success = false, message = "Error while deleting" });
-            }
-            _unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Delete, parameter);
-            _unitOfWork.Save();
-            return Json(new { success = true, message = "Delete Successful" });
-        }
+        //[HttpDelete]
+        //public IActionResult Delete(int id)
+        //{
+        //    var parameter = new DynamicParameters();
+        //    parameter.Add("@Id", id);
+        //    var objFromDb = _unitOfWork.SP_Call.OneRecord<CoverType>(SD.Proc_CoverType_Get, parameter);
+        //    if (objFromDb == null)
+        //    {
+        //        return Json(new { success = false, message = "Error while deleting" });
+        //    }
+        //    _unitOfWork.SP_Call.Execute(SD.Proc_CoverType_Delete, parameter);
+        //    _unitOfWork.Save();
+        //    return Json(new { success = true, message = "Delete Successful" });
+        //}
 
 
         #endregion

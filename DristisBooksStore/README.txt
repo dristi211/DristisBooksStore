@@ -616,3 +616,6 @@ Added the migration again
 At 18:13
 
 The page is showing and table are showing but can't add the price and coverType
+
+At 18:38
+Created the CoverType and try to populate the table but not working....):
