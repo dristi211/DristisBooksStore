@@ -587,4 +587,8 @@ The program '[31312] iisexpress.exe' has exited with code -1 (0xffffffff).
 
 resume working on assingment part4...added the CategoryVM.cs and modifieying the SD.cs but having error and page is unavailable.....
 
-add the Price 
+at15:38 droped the Category table as no data was showing and void
+20231101180003_AddCategoryToDb
+20231101180754_AddDefaultIdentityMigration
+20231123213954__AddCoverTypeToDb
+20231127161536_AddPriceToDb
