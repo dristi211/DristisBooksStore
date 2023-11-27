@@ -585,4 +585,6 @@ The program '[31312] iisexpress.exe' has exited with code -1 (0xffffffff).
 
 2023-11-27 ISO 10:26
 
-resume working on assingment part4...added the CategoryVM.cs and modifieying the SD.cs
+resume working on assingment part4...added the CategoryVM.cs and modifieying the SD.cs but having error and page is unavailable.....
+
+add the Price 
