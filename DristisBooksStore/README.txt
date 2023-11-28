@@ -623,3 +623,6 @@ Created the CoverType and try to populate the table but not working....):
 2023-11-28 ISO 8:09
 
 It was success that I manage to add list items on the page and also added the table
+
+At 11:20 
+There was an error in the CoverTypeController that was giving the error, also the %Width of the page size was hindering the images
