@@ -37,6 +37,7 @@ Next in the wwwroot>css>cite.css codes were replaced (commented out) with the gi
 navbar-light to navbar dark and bg-white to bg-primary
 
 in the _Layout.cshtm file change the a tag class at Line 22 (document said line 23? but text-dark in line 22) - remove text-dark
+
 At 17:23
 in the _Layout.cshtml file at line 43 in the footer class change from text-muted to text-white-50 bg-primary
 additional style sheets added to the head section and additional scripts use in the footer section _Layout.cshtml file
@@ -106,7 +107,7 @@ changed the appsettings.json modify the database name and saved
 
     "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=DristisBooksStore;Trusted_Connection=True;MultipleActiveResultSets=true"
 
-    At 11:40
+  At 11:40
     use the Nugat package manager to add the migration
 
     here come 4 errors 
@@ -117,8 +118,9 @@ changed the appsettings.json modify the database name and saved
 
      this code need to add with  DristisBooksStore.Models.ViewModels.ErrorViewModel instead I had ErrorViewModel only
 
-     At 11:50
-     add-migration AddDefaultIdentityMigration in the Nugate Package Manager console Build succeeded but giving the following red warning
+  At 11:50
+
+ add-migration AddDefaultIdentityMigration in the Nugate Package Manager console Build succeeded but giving the following red warning
 
  Your target project 'DristisBooksStore' doesn't match your migrations assembly 'DristisBooks.DataAccess'. Either change your target project or change your migrations assembly.
 Change your migrations assembly by using DbContextOptionsBuilder. E.g. options.UseSqlServer(connection, b => b.MigrationsAssembly("DristisBooksStore")). By default, the migrations assembly is the assembly containing the DbContext.
@@ -290,7 +292,6 @@ using Dapper;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-//using System.Linq;
 using System.Text;
 
 At 20:43
@@ -626,3 +627,9 @@ It was success that I manage to add list items on the page and also added the ta
 
 At 11:20 
 There was an error in the CoverTypeController that was giving the error, also the %Width of the page size was hindering the images
+
+2023-12-04 ISO 14:31
+
+Trying to find out why the home page with the image is not showing after login to a new system...
+
+I am going to try to diploy to azure
