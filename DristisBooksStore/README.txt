@@ -393,31 +393,7 @@ added the API (Application Programming Interface) call for HTTPDelete in the Cat
         added the delete functionality in category.js with including the onclick event to the Delete function
         added the Delete(url) function code
 
-        function Delete(url) {
-    swal({
-        title: "Are you sure you want to delete?",
-        text: "You will not be able to restore the data!",
-        icon: "warning",
-        buttons: true,
-        dangerMode: true
-    }).then((willDelete) => {
-        if (willDelete) {
-            $.ajax({
-                type: "DELETE",
-                url: url,
-                success: function (data) {
-                    if (data.success) {
-                            toastr.success(data.message);
-                            dataTable.ajax.reload();
-                        }
-                        else {
-                            toastr.error(data.message);
-                        }
-                    }
-            });
-        }
-    });  
-}
+   
 
 2023-11-06 ISO 14:54
 there was an error coming 
@@ -632,4 +608,11 @@ There was an error in the CoverTypeController that was giving the error, also th
 
 Trying to find out why the home page with the image is not showing after login to a new system...
 
-I am going to try to diploy to azure
+I am going to try to diploy to azure..
+
+2023-12-05 ISO 11:03
+
+Tried for the Azure deployment of the app but without luck..):
+
+Its not showing the Subscription name and App service instance page to create the Subscription
+
