@@ -14,4 +14,4 @@ Nugate package was installed:
 Install the Microsoft.EntityFrameWorkCore.Relational and Microsoft.EntityFrameWorkCore.SqlServer 5.0.17 version
 next install Microsoft.Identity EntityFrameworkCore 5.0.17 version
 The Style was modified from the default projects and New Area added for the Customer and Admin also. The MVC app is very powerful for individual and company use.
-For the assessment We created part-1
+For the assessment We created part-1 ( Book Store), Part-2(Database modified), Part-3(Category, CoverType CRUD created) and Part-4 (Populate Product database) and Part-5(submit the app with github link)
